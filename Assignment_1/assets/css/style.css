@@ -1,0 +1,191 @@
+body {
+    margin: 0px !important;
+    font-family: Roboto;
+}
+
+header {
+    background-color: rgb(39, 56, 82);
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header h5 {
+    font-family: Roboto;
+    margin: 0px;
+    color: rgb(39, 56, 82);
+}
+
+.header h1 {
+    font-family: Roboto;
+    margin: 0px;
+    color: rgb(39, 56, 82);
+}
+
+.header {
+    background-color: rgb(255, 255, 255);
+    width: 220px;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    border: 2px solid rgb(216, 91, 72);
+}
+
+main {
+    margin: auto;
+    max-width: 91%;
+    margin-top: 50px;
+}
+
+main hr {
+    border: 1px solid rgba(39, 56, 82, 1);
+}
+
+.main-head {
+    padding-top: 10px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.select-category h5 {
+    margin: 0px 0px 10px 0px;
+}
+
+#Category {
+    padding: 5px;
+    width: 200px;
+}
+
+.main-heading {
+    color: rgb(39, 56, 82);
+}
+
+.subscribe h5 {
+    margin: 0px 0px 10px 0px;
+}
+
+.EmailSub {
+    display: flex;
+    border: 2px solid rgb(39, 56, 82);
+}
+
+#EmailInput {
+    border: 0px;
+    padding: 7px;
+    display: inline-flex;
+}
+
+#SubscribeButton {
+    border: 0px;
+    background-color: rgb(39, 56, 82);
+    color: rgb(255, 255, 255);
+}
+
+.news-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.image-placeholder {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(208, 208, 208);
+}
+
+.news-info {
+    max-width: 75%;
+    margin-left: 20px;
+}
+
+.news-info h3,
+h6 {
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.news-meta {
+    color: gray;
+}
+
+.date {
+    color: black;
+}
+
+.read-full-news {
+    border: 0px;
+    background-color: rgb(216, 91, 72);
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    background-color: rgb(39, 56, 82);
+    width: 100%;
+    padding: 10px;
+    color: rgb(208, 208, 208);
+    text-align: center;
+}
+
+.card-hr {
+    border: 1px solid rgba(39, 56, 82, 0.5);
+}
+
+@media only screen and (max-width: 988px) {
+    .image-placeholder {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .image-placeholder {
+        width: 100px;
+        height: 100px;
+    }
+    .main-head :nth-child(1) {
+        order: 2;
+    }
+    .main-head :nth-child(2) {
+        order: 1;
+    }
+    .main-head :nth-child(3) {
+        order: 3;
+    }
+    .main-head {
+        flex-direction: column;
+    }
+    .EmailSub :nth-child(1) {
+        order: 1;
+    }
+    .EmailSub :nth-child(2) {
+        order: 2;
+    }
+    .subscribe {
+        margin-top: 30px;
+    }
+    .EmailSub {
+        display: inline-flex;
+    }
+}
+
+@media only screen and (max-width:530px) {
+    .news-info {
+        margin-left: 0px;
+        margin-top: 25px;
+        max-width: 100%;
+    }
+    .image-placeholder {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width:280px) {
+    .header {
+        padding: 5px;
+    }
+}
