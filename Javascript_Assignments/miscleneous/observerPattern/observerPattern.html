@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Observer Pattern</title>
+
+    <style>
+        .square {
+            width: 200px;
+            text-align: center;
+            display: inline-block;
+            margin-right: 50px;
+            background-color: black;
+            color: white;
+            font-size: 100px;
+            padding: 50px;
+            font-family: cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="square" id="elementOBS">
+
+    </div>
+    <hr>
+    <button onclick="model.increment()">Increment</button>
+    <script src="./js/NumberModel.js"></script>
+    <script src="./js/ElementObserver.js"></script>
+    <script>
+        const model = new NumberModel();
+        const elOBS = new ElementObserver("elementOBS");
+
+        model.addObserver(elOBS);
+    </script>
+</body>
+
+</html>
