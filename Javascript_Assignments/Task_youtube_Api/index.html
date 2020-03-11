@@ -6,25 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/index.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body style="font-size: 15px;font-family: Roboto, Arial, sans-serif;">
-    <ul>
-        <li><img src="./assets/img/logo.png" alt="logo" id="logo"></li>
-        <li>
+    <div id="ul">
+        <div id="li"><img src="./assets/img/logo.png" alt="logo" id="logo"></div>
+        <div id="li" class="searchDiv">
             <div class="search">
-                <input type="text" class="searchTerm" placeholder="Search For Video">
-                <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+                <input type="text" class="searchTerm" placeholder="Search For Video" id="searchBox">
+                <button type="submit" class="searchButton" id="searchButton" onclick="searchBoxSubmit()"><i class="fa fa-search"></i></button>
             </div>
-        </li>
-        <!-- <li><input type="text" id="searchBox"></li>
-        <li> <button type="submit" onclick="searchBoxSubmit()" id="search"><img id="searchImg" src="./assets/img/search.png" alt=""></button></li> -->
-    </ul>
+        </div>
+    </div>
 
     <div id="displayAllVid" style="display:flex; flex-wrap: wrap;">
 
     </div>
+    <div id="prevNextBtn">
+        <button class="previousButton" onclick="previousResultSet()">Previous</button>
+        <button class="nextButton" onclick="nextResultSet()">Next</button>
+    </div>
+
+
     <script src="./index.js"></script>
 </body>
 
